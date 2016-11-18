@@ -2,11 +2,11 @@ package de.integrata.oop.sz.names;
 
 public class Abbrev {
 
-	public void doIt(int mxNoPts) {
+	public void doIt(int maxNumberOfPoints) {
 
-		while (ptList.size() > mxNoPts) {
-			Point rmvd = ptList.removeLast();
-			sprList.add(rmvd);
+		while (pointList.size() > maxNumberOfPoints) {
+			Point removed = pointList.removeLast();
+			spareList.add(removed);
 		}
 	}
 

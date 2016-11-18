@@ -5,15 +5,20 @@ import java.io.Writer;
 public class LetterPrinter {
 
 	private Letter letter;
+	private Writer writer;
 
-	public void printLetter(Letter letter, Writer writer) {
+	public LetterPrinter(Letter letter, Writer writer) {
 		this.letter = letter;
-				
-		printHeader(writer);
+		this.writer = writer;
+	}
+	
+	public void printLetter() {
 		
-		printAddress(writer);
+		printHeader();
 		
-		printText(writer);
+		printAddress();
+		
+		printText();
 		
 		
 	}
